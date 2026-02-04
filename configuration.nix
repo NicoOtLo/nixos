@@ -28,11 +28,11 @@
   services.xserver.xkb.layout = "es";
 
   programs.xwayland.enable = true;
-  
+
   services.displayManager = {
     ly.enable = true;
-    sessionPackages = [ 
-	    pkgs.niri
+    sessionPackages = [
+      pkgs.niri
     ];
   };
 
