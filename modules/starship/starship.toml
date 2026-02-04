@@ -1,0 +1,26 @@
+add_newline = false
+
+format = """
+$directory$git_branch$git_status$nix_shell
+$character
+"""
+
+[directory]
+truncation_length = 3
+style = "blue"
+
+[git_branch]
+symbol = " "
+style = "purple"
+
+[git_status]
+style = "yellow"
+
+[nix_shell]
+symbol = "❄️ "
+format = "[$symbol$name]($style) "
+
+[character]
+success_symbol = "➜ "
+error_symbol = "✗ "
+

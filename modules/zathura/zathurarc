@@ -1,0 +1,2 @@
+# Set a transparent background color (RGBA)
+set default-bg rgba(30,30,30,0.8)

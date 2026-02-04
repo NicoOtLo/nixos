@@ -1,0 +1,28 @@
+* {
+  all: unset;
+  font-family: mononoki;
+}
+
+window {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#container {
+  padding: 24px;
+}
+
+button {
+  background-color: #222222;
+  color: #dddddd;
+
+  padding: 16px 16px;
+  margin: 8px;
+
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #333333;
+}
+
