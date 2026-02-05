@@ -90,6 +90,7 @@
     networkmanagerapplet
     tree
     zip
+    dig
     unzip
     libnotify
     man-pages
