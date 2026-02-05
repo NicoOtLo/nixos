@@ -14,7 +14,7 @@
 
   home.username = "nico";
   home.homeDirectory = "/home/nico";
-  home.stateVersion = "25.05";
+  home.stateVersion = "25.05"; # no tocar
 
   programs.git = {
     enable = true;
