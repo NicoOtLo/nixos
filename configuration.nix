@@ -85,6 +85,7 @@
     rofi
     thunderbird
     swaybg
+    imv
     microfetch
     networkmanagerapplet
     tree
