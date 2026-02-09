@@ -76,6 +76,7 @@
     helix
     dbeaver-bin
     vim
+    valgrind
     gcc
     imagemagick
     python3
