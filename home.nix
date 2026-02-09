@@ -52,7 +52,6 @@
   };
 
   home.packages = with pkgs; [
-    wireshark
     htop
     wlogout
     libreoffice-qt-fresh
@@ -78,5 +77,6 @@
     swaylock
     waybar
     ani-cli
+    wireshark
   ];
 }

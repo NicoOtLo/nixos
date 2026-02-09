@@ -5,12 +5,9 @@
     ./hardware-configuration.nix
   ];
 
-  # boot.loader.systemd-boot.enable = false;
-  boot.loader.grub = {
-    enable = true;
-    efiSupport = true;
-    device = "nodev";
-  };
+  boot.loader.grub.enable = false;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
   # garbage collector automation
   nix.gc = {
@@ -41,7 +38,7 @@
 
   users.users.nico = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "lp" ]; # sudo, wifi, impresora
+    extraGroups = [ "wheel" "networkmanager" "lp" "wireshark" ]; # sudo, wifi, impresora, wireshark
     shell = pkgs.zsh;
     packages = with pkgs; [
       vlc
@@ -51,6 +48,7 @@
   nixpkgs.config.allowUnfree = true;
 
   programs.firefox.enable = true;
+  programs.wireshark.enable = true;
 
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
