@@ -10,6 +10,7 @@
     ./modules/helix/helix.nix
     ./modules/fastfetch/fastfetch.nix
     ./modules/starship/starship.nix
+    ./modules/gtk/gtk.nix
   ];
 
   home.username = "nico";
@@ -53,10 +54,12 @@
 
   home.packages = with pkgs; [
     htop
+    thunar
+    nm-connection-editor
+    pavucontrol
     wlogout
     libreoffice-qt-fresh
     scid-vs-pc
-    chess-tui
     tldr
     steam
     ocamlPackages.utop

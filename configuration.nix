@@ -30,6 +30,7 @@
     ly.enable = true;
     sessionPackages = [
       pkgs.niri
+      pkgs.hyprland
     ];
   };
 
