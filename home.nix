@@ -48,7 +48,7 @@
       y = "yazi";
       c = "clear";
       nixos = "cd /etc/nixos";
-      nurse = "sudo nixos-rebuild switch --flake /etc/nixos#numantia";
+      nurse = "sudo nixos-rebuild switch --verbose --print-build-logs --debug --show-trace --flake /etc/nixos#numantia";
       upgrade = "sudo nixos-rebuild switch --upgrade --flake /etc/nixos#numantia";
     };
   };

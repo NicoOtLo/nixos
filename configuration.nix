@@ -39,10 +39,10 @@
 
   users.users.nico = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "lp" "wireshark" ]; # sudo, wifi, impresora, wireshark
+    extraGroups = [ "wheel" "networkmanager" "lp" "wireshark" "docker" ]; # sudo, wifi, impresora, wireshark, docker
     shell = pkgs.zsh;
     packages = with pkgs; [
-      vlc
+
     ];
   };
 
@@ -71,11 +71,29 @@
   services.udisks2.enable = true;
   services.devmon.enable = true;
 
+  # DOCKER
+  virtualisation.docker = {
+    enable = true;
+
+    daemon.settings = {
+      dns = [ "1.1.1.1" "8.8.8.8" ];
+      log-driver = "journald";
+      registry-mirrors = [ "https://mirror.gcr.io" ];
+      storage-driver = "overlay2";
+    };
+
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
+
   environment.systemPackages = with pkgs; [
     helix
     dbeaver-bin
     vim
     valgrind
+    vlc
     gcc
     imagemagick
     python3
