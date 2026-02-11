@@ -33,6 +33,12 @@
     };
   };
 
+  home.packages = with pkgs; [
+    gruvbox-gtk-theme
+    papirus-icon-theme
+    bibata-cursors
+  ];
+
   home.sessionVariables = {
     GTK_USE_PORTAL = "1";
     XDG_SESSION_TYPE = "wayland";

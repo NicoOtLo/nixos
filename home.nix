@@ -11,6 +11,7 @@
     ./modules/fastfetch/fastfetch.nix
     ./modules/starship/starship.nix
     ./modules/gtk/gtk.nix
+    ./modules/hyprland/hyprland.nix
   ];
 
   home.username = "nico";
@@ -54,12 +55,13 @@
 
   home.packages = with pkgs; [
     htop
-    thunar
-    nm-connection-editor
+    xfce.thunar
+    networkmanagerapplet
     pavucontrol
     wlogout
     libreoffice-qt-fresh
     scid-vs-pc
+    stockfish
     tldr
     steam
     ocamlPackages.utop
