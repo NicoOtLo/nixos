@@ -4,7 +4,7 @@
   imports = [
     ./modules/wlogout/wlogout.nix
     ./modules/zathura/zathura.nix
-    ./modules/waybar/waybar.nix
+    ./modules/waybar
     ./modules/niri/niri.nix
     ./modules/kitty/kitty.nix
     ./modules/helix/helix.nix
@@ -48,7 +48,7 @@
       y = "yazi";
       c = "clear";
       nixos = "cd /etc/nixos";
-      nurse = "sudo nixos-rebuild switch --verbose --print-build-logs --debug --show-trace --flake /etc/nixos#numantia";
+      nurse = "sudo nixos-rebuild switch --flake /etc/nixos#numantia";
       upgrade = "sudo nixos-rebuild switch --upgrade --flake /etc/nixos#numantia";
     };
   };

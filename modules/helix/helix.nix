@@ -16,7 +16,7 @@
         auto-pairs = true;
 
       };
-      
+
     };
 
     languages = {
@@ -34,11 +34,11 @@
           auto-format = true;
         }
 
-	      {
-	        name = "c";
-	        auto-format = true;
+        {
+          name = "c";
+          auto-format = true;
         }
-        
+
       ];
     };
   };
