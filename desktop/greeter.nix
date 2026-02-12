@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
 {
+  programs.niri.enable;
+  programs.xwayland.enable;
+
   services.greetd = {
     enable = true;
 
@@ -12,4 +15,3 @@
     };
   };
 }
-
