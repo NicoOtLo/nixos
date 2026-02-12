@@ -26,12 +26,15 @@
 
   programs.xwayland.enable = true;
 
-  services.displayManager = {
-    ly.enable = true;
-    sessionPackages = [
-      pkgs.niri
-      pkgs.hyprland
-    ];
+  services.greetd = {
+    enable = true;
+
+    settings = {
+      default_session = {
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd ${pkgs.niri}/bin/niri";
+        user = "greeter";
+      };
+    };
   };
 
   programs.niri.enable = true;
