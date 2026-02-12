@@ -4,15 +4,16 @@
   imports = [
     ./device/users.nix
     ./device/gc.nix
+    ./device/virtualisation.nix
+    ./device/printer.nix
+    ./device/networking.nix
+
     ./hardware-configuration.nix
   ];
 
   boot.loader.grub.enable = false;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
-  networking.hostName = "numantia";
-  networking.networkmanager.enable = true;
 
   time.timeZone = "Europe/Madrid";
 
@@ -42,39 +43,10 @@
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 
-  # IMPRESORA
-  services.printing = {
-    enable = true;
-    drivers = [
-      pkgs.gutenprint
-      pkgs.hplip
-      pkgs.brlaser
-      pkgs.brgenml1lpr
-      pkgs.brgenml1cupswrapper
-    ];
-  };
-
   # USB
   services.gvfs.enable = true;
   services.udisks2.enable = true;
   services.devmon.enable = true;
-
-  # DOCKER
-  virtualisation.docker = {
-    enable = true;
-
-    daemon.settings = {
-      dns = [ "1.1.1.1" "8.8.8.8" ];
-      log-driver = "journald";
-      registry-mirrors = [ "https://mirror.gcr.io" ];
-      storage-driver = "overlay2";
-    };
-
-    rootless = {
-      enable = true;
-      setSocketVariable = true;
-    };
-  };
 
   environment.systemPackages = with pkgs; [
     helix
