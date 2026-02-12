@@ -16,6 +16,9 @@
 
     ./desktop/greeter.nix
 
+    ./packages/universitypkgs.nix
+    ./packages/envpkgs.nix
+
     ./hardware-configuration.nix
   ];
 
@@ -30,14 +33,7 @@
   programs.wireshark.enable = true;
 
   environment.systemPackages = with pkgs; [
-    helix
-    dbeaver-bin
-    vim
-    valgrind
-    vlc
-    gcc
     imagemagick
-    python3
     wget
     git
     alacritty
@@ -47,8 +43,6 @@
     imv
     microfetch
     networkmanagerapplet
-    tree
-    zip
     dig
     unzip
     libnotify
