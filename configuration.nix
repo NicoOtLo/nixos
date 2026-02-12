@@ -9,6 +9,10 @@
     ./device/networking.nix
     ./device/region.nix
     ./device/boot.nix
+    ./device/usb.nix
+    ./device/bluetooth.nix
+    ./device/pipewire.nix
+    ./device/envvar.nix
 
     ./hardware-configuration.nix
   ];
@@ -33,14 +37,6 @@
 
   programs.firefox.enable = true;
   programs.wireshark.enable = true;
-
-  hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
-
-  # USB
-  services.gvfs.enable = true;
-  services.udisks2.enable = true;
-  services.devmon.enable = true;
 
   environment.systemPackages = with pkgs; [
     helix
@@ -69,23 +65,12 @@
     element-desktop
   ];
 
-  # OBS-STUDIO
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    jack.enable = true;
-  };
-
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
-  };
-
-  environment.variables = {
-    XDG_CURRENT_DESKTOP = "niri";
   };
 
   # FULL DOCS
