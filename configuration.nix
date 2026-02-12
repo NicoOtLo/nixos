@@ -3,20 +3,13 @@
 {
   imports = [
     ./users.nix
+    ./gc.nix
     ./hardware-configuration.nix
   ];
 
   boot.loader.grub.enable = false;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
-  # garbage collector automation
-  nix.gc = {
-    automatic = true;
-    persistent = false;
-    dates = "weekly";
-    options = "--delete-older-than 15d";
-  };
 
   networking.hostName = "numantia";
   networking.networkmanager.enable = true;

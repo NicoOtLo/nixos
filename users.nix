@@ -1,3 +1,8 @@
+{ config
+, pkgs
+, ...
+}:
+
 {
   users.users.nico = {
     isNormalUser = true;
