@@ -112,6 +112,7 @@
     unzip
     libnotify
     man-pages
+    element-desktop
   ];
 
   # OBS-STUDIO
