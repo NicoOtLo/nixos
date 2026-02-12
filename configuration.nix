@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ./users.nix
-    ./gc.nix
+    ./device/users.nix
+    ./device/gc.nix
     ./hardware-configuration.nix
   ];
 
