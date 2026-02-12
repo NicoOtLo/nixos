@@ -7,17 +7,11 @@
     ./device/virtualisation.nix
     ./device/printer.nix
     ./device/networking.nix
+    ./device/region.nix
+    ./device/boot.nix
 
     ./hardware-configuration.nix
   ];
-
-  boot.loader.grub.enable = false;
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
-  time.timeZone = "Europe/Madrid";
-
-  services.xserver.xkb.layout = "es";
 
   programs.xwayland.enable = true;
 

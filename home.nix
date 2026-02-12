@@ -83,5 +83,6 @@
     waybar
     ani-cli
     wireshark
+    mindustry-wayland
   ];
 }
