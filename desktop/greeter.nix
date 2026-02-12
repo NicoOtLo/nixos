@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  programs.niri.enable;
-  programs.xwayland.enable;
+  programs.niri.enable = true;
+  programs.xwayland.enable = true;
 
   services.greetd = {
     enable = true;
