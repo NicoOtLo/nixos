@@ -1,9 +1,8 @@
-{
-  host,
-  pkgs,
-  ...
+{ host
+, pkgs
+, ...
 }: {
-  home.packages = with pkgs; [pavucontrol];
+  home.packages = with pkgs; [ pavucontrol ];
   programs.waybar.settings.mainBar = {
     position = "top";
     layer = "top";
@@ -15,7 +14,7 @@
       "hyprland/window"
       "custom/sep"
     ];
-    modules-center = [];
+    modules-center = [ ];
     modules-right = [
       "custom/sep"
       "custom/clipboard"
@@ -33,6 +32,7 @@
       "clock"
       "custom/sep"
       "tray"
+      "battery"
     ];
     "custom/clipboard" = {
       on-click = "vicinae vicinae://extensions/vicinae/clipboard/history";
@@ -80,7 +80,7 @@
       format-plugged = "{capacity}% ";
       format-alt = "Bat {capacity}%";
       format-time = "{H}:{M}";
-      format-icons = ["" "" "" "" ""];
+      format-icons = [ "" "" "" "" "" ];
     };
     network = {
       format = "Online";
@@ -99,11 +99,11 @@
         phone-muted = "";
         portable = "";
         car = "";
-        default = ["" ""];
+        default = [ "" "" ];
       };
       scroll-step = 1;
       on-click = "pavucontrol";
-      ignored-sinks = ["Easy Effects Sink"];
+      ignored-sinks = [ "Easy Effects Sink" ];
     };
     "custom/sep" = {
       format = "|";

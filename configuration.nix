@@ -48,6 +48,7 @@
     libnotify
     man-pages
     element-desktop
+    vicinae
   ];
 
   xdg.portal = {
