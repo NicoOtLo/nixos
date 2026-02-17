@@ -118,6 +118,7 @@ layout {
 
 spawn-at-startup "swaybg" "-i" "/etc/nixos/wallpapers/grapes.png" "-m" "fill"
 spawn-at-startup "waybar"
+spawn-at-startup "vicinae" "server"
 
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
@@ -179,6 +180,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Mod+P hotkey-overlay-title="Run an Application: firefox" { spawn "firefox"; }
 
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
 
