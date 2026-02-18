@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./modules/wlogout/wlogout.nix
     ./modules/zathura/zathura.nix
     ./modules/waybar
     ./modules/niri/niri.nix

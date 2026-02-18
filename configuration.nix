@@ -49,6 +49,7 @@
     man-pages
     element-desktop
     vicinae
+    system-config-printer
   ];
 
   xdg.portal = {
