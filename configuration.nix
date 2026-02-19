@@ -13,6 +13,7 @@
     ./device/bluetooth.nix
     ./device/pipewire.nix
     ./device/envvar.nix
+    ./device/manuals.nix
 
     ./desktop/greeter.nix
 
@@ -58,13 +59,6 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
-  };
-
-  # FULL DOCS
-  documentation = {
-    dev.enable = true;
-    man.generateCaches = true;
-    nixos.includeAllModules = true;
   };
 
   fonts = {
