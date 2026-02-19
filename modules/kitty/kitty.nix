@@ -26,7 +26,7 @@
       color5 = "#CE93D8";
       color6 = "#80DEEA";
       color7 = "#E0E0E0";
-      
+
       color8 = "#5D4C50";
       color9 = "#F06292";
       color10 = "#81C784";
@@ -35,12 +35,12 @@
       color13 = "#BA68C8";
       color14 = "#4DD0E1";
       color15 = "#FFFFFF";
-      
+
       selection_foreground = "#2E2E2E";
       selection_background = "#A3A3A3";
-      
+
       window_padding_width = 12;
-      
+
       enable_audio_bell = "no";
     };
   };

@@ -14,6 +14,7 @@
     ./device/pipewire.nix
     ./device/envvar.nix
     ./device/manuals.nix
+    ./device/fonts.nix
 
     ./desktop/greeter.nix
 
@@ -59,16 +60,6 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-hyprland
     ];
-  };
-
-  fonts = {
-    packages = with pkgs; [
-      nerd-fonts.mononoki
-    ];
-
-    fontconfig.defaultFonts = {
-      monospace = [ "mononoki" ];
-    };
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
