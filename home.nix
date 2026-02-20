@@ -44,6 +44,7 @@
 
     shellAliases = {
       la = "eza -lha";
+      ll = "eza -lh";
       y = "yazi";
       c = "clear";
       nixos = "cd /etc/nixos";
