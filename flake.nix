@@ -1,39 +1,39 @@
 {
-	description = "NixOS from Scratch";
+  description = "NixOS from Scratch";
 
-	inputs = {
+  inputs = {
 
-		nixpkgs.url = "nixpkgs/nixos-unstable";
+    nixpkgs.url = "nixpkgs/nixos-unstable";
 
-		home-manager = {
-			url = "github:nix-community/home-manager";
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
-		
-	};
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
-	outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  };
 
-		nixosConfigurations.numantia = nixpkgs.lib.nixosSystem {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
 
-			system = "x86_64-linux";
+    nixosConfigurations.numantia = nixpkgs.lib.nixosSystem {
 
-			modules = [
-				./configuration.nix
+      system = "x86_64-linux";
 
-				home-manager.nixosModules.home-manager 
-				{				
-					home-manager = {
-						useGlobalPkgs = true;
-						useUserPackages = true;
-						users.nico = import ./home.nix;
-						backupFileExtension = "backup";
-					};
-				}
-				
-			];
-			
-			specialArgs = { inherit inputs; };
-		};
-	};
+      modules = [
+        ./configuration.nix
+
+        home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.nico = import ./home.nix;
+            backupFileExtension = "backup";
+          };
+        }
+
+      ];
+
+      specialArgs = { inherit inputs; };
+    };
+  };
 }
