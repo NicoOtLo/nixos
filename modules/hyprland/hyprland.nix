@@ -1,9 +1,13 @@
-{pkgs, ...}: {
-  home.packages = [pkgs.rose-pine-hyprcursor]; #Cursor's package set by hyprctl
+{ pkgs, ... }: {
+  home.packages = [ pkgs.rose-pine-hyprcursor ]; #Cursor's package set by hyprctl
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
     settings = {
+      monitor = [
+        "eDP-1,auto,auto,auto"
+      ];
+
       animations = {
         enabled = true;
         bezier = [
@@ -70,15 +74,18 @@
         ++ (
           # Workspaces con genList
           builtins.concatLists (
-            builtins.genList (
-              i: let
-                ws = i + 1;
-              in [
-                "$mod, code:1${toString i}, workspace, ${toString ws}"
-                "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
-              ]
-            )
-            9
+            builtins.genList
+              (
+                i:
+                let
+                  ws = i + 1;
+                in
+                [
+                  "$mod, code:1${toString i}, workspace, ${toString ws}"
+                  "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+                ]
+              )
+              9
           )
         )
         ++ (
@@ -105,12 +112,15 @@
                 "0 ${resize}"
               ];
             in
-              builtins.genList (
-                x: let
+            builtins.genList
+              (
+                x:
+                let
                   k = builtins.elemAt keys x;
                   d = builtins.elemAt directions x;
                   r = builtins.elemAt resize_list x;
-                in [
+                in
+                [
                   "$mod, ${k}, movefocus, ${d}"
                   "$mod SHIFT, ${k}, movewindow, ${d}"
                   "$mod CTRL, ${k}, resizeactive, ${r}"

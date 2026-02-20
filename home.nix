@@ -43,7 +43,7 @@
     };
 
     shellAliases = {
-      la = "ls -lha";
+      la = "eza -lha";
       y = "yazi";
       c = "clear";
       nixos = "cd /etc/nixos";
@@ -53,6 +53,8 @@
   };
 
   home.packages = with pkgs; [
+    eza
+    bat
     htop
     xfce.thunar
     networkmanagerapplet
