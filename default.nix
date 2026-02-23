@@ -15,6 +15,7 @@
     ./device/envvar.nix
     ./device/manuals.nix
     ./device/fonts.nix
+    ./device/suspend.nix
 
     ./desktop/greeter.nix
 
