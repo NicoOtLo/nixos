@@ -1,3 +1,5 @@
 {
-  environment.variables = { };
+  environment.sessionVariables = {
+    EDITOR = "hx";
+  };
 }
