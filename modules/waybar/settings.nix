@@ -85,7 +85,7 @@
     network = {
       format = "Online";
       format-disconnected = "Disconnected ⚠";
-      on-click = "vicinae vicinae://extensions/vicinae/wifi-commander";
+      on-click = "nm-applet";
     };
     pulseaudio = {
       format = "{volume}% {icon}";

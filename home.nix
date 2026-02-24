@@ -86,5 +86,6 @@
     ani-cli
     wireshark
     mindustry-wayland
+    nbsdgames
   ];
 }

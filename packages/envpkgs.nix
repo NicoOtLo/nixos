@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     zip
+    upower
     git
     libnotify
     vlc
