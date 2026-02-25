@@ -10,6 +10,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
@@ -20,6 +24,9 @@
 
       modules = [
         ./default.nix
+
+        # Other modules
+        inputs.noctalia.nixosModules.default
 
         home-manager.nixosModules.home-manager
         {

@@ -38,8 +38,12 @@
   programs.firefox.enable = true;
   programs.wireshark.enable = true;
 
+  services.upower.enable = true;
+
   environment.systemPackages = with pkgs; [
     imagemagick
+    quickshell
+    inputs.noctalia.packages.x86_64-linux.default
     wget
     git
     alacritty
