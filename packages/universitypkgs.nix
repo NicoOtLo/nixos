@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
+  users.users.nico.packages = with pkgs; [
     valgrind
     dbeaver-bin
   ];

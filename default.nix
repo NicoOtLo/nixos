@@ -27,10 +27,6 @@
 
   programs.xwayland.enable = true;
 
-  programs.niri.enable = true;
-  programs.hyprland.enable = true;
-  programs.hyprland.withUWSM = true;
-
   programs.zsh.enable = true;
 
   nixpkgs.config.allowUnfree = true;

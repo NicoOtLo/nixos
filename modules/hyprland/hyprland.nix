@@ -1,11 +1,11 @@
 { pkgs, ... }: {
-  home.packages = [ pkgs.rose-pine-hyprcursor ]; #Cursor's package set by hyprctl
+  home.packages = [ pkgs.rose-pine-hyprcursor pkgs.mako pkgs.hyprpaper pkgs.vicinae ]; #Cursor's package set by hyprctl
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
     settings = {
       monitor = [
-        "eDP-1,auto,auto,auto"
+        "eDP-1,preferred,auto,1"
       ];
 
       animations = {
