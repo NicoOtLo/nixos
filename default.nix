@@ -19,7 +19,6 @@
 
     ./desktop/greeter.nix
 
-    ./packages/universitypkgs.nix
     ./packages/envpkgs.nix
 
     ./hardware-configuration.nix
@@ -35,28 +34,6 @@
   programs.wireshark.enable = true;
 
   services.upower.enable = true;
-
-  environment.systemPackages = with pkgs; [
-    imagemagick
-    quickshell
-    inputs.noctalia.packages.x86_64-linux.default
-    wget
-    git
-    alacritty
-    rofi
-    thunderbird
-    swaybg
-    imv
-    microfetch
-    networkmanagerapplet
-    dig
-    unzip
-    libnotify
-    man-pages
-    element-desktop
-    vicinae
-    system-config-printer
-  ];
 
   xdg.portal = {
     enable = true;
