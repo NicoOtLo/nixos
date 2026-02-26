@@ -20,6 +20,7 @@
     ./desktop/greeter.nix
 
     ./packages/envpkgs.nix
+    ./packages/users.nix
 
     ./hardware-configuration.nix
   ];

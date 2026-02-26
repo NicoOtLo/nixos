@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -91,22 +91,14 @@
     nbsdgames
     imagemagick
     quickshell
-    inputs.noctalia.packages.x86_64-linux.default
-    wget
-    git
     alacritty
     rofi
     thunderbird
     swaybg
     imv
     microfetch
-    networkmanagerapplet
     dig
     unzip
     libnotify
-    man-pages
-    element-desktop
-    vicinae
-    system-config-printer
   ];
 }
