@@ -17,7 +17,7 @@
     ./device/fonts.nix
     ./device/suspend.nix
 
-    ./desktop/greeter.nix
+    ./desktop/greeter.nix # Sin usar
 
     ./packages/envpkgs.nix
     ./packages/users.nix
