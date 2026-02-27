@@ -99,6 +99,7 @@
     microfetch
     dig
     unzip
+    mdcat
     libnotify
   ];
 }
