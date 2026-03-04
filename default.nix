@@ -31,6 +31,9 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  hardware.enableAllFirmware = true;
+  networking.networkmanager.enable = true;
+
   programs.firefox.enable = true;
   programs.wireshark.enable = true;
 

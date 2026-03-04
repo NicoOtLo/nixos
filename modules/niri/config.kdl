@@ -19,6 +19,7 @@ input {
         // off
         natural-scroll
         accel-speed 0.2
+        scroll-factor 2.0
         accel-profile "flat"
         scroll-method "no-scroll"
     }
@@ -117,7 +118,7 @@ layout {
 }
 
 spawn-at-startup "swaybg" "-i" "/etc/nixos/wallpapers/grapes.png" "-m" "fill"
-spawn-at-startup "noctalia-shell" "--no-duplicate"
+spawn-at-startup "waybar"
 spawn-at-startup "vicinae" "server"
 
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
