@@ -29,8 +29,6 @@
 
   programs.zsh.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
-
   hardware.enableAllFirmware = true;
   networking.networkmanager.enable = true;
 
