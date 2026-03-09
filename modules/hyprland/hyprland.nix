@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  home.packages = [ pkgs.rose-pine-hyprcursor pkgs.mako pkgs.hyprpaper pkgs.vicinae ]; #Cursor's package set by hyprctl
+  home.packages = [ pkgs.rose-pine-hyprcursor pkgs.mako pkgs.hyprpaper pkgs.vicinae pkgs.hyprshade ]; #Cursor's package set by hyprctl
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -56,6 +56,7 @@
 
       exec-once = [
         "uwsm app -- waybar"
+        "uwsm app -- hyprshade on eink"
         "uwsm app -- swaybg -m fill -i /etc/nixos/modules/hyprland/wallpapers/death_star.png"
         "uwsm app -- vicinae server"
         "uwsm app -- mako"
