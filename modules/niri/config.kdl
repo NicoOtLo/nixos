@@ -143,8 +143,8 @@ animations {
 }
 
 window-rule {
-    match app-id="kitty"
-    opacity 1.0
+    match app-id="firefox"
+    opacity 0.85
 }
 
 // Open the Firefox picture-in-picture player as floating by default.

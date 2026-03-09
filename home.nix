@@ -7,6 +7,7 @@
     ./modules/niri/niri.nix
     ./modules/kitty/kitty.nix
     ./modules/helix/helix.nix
+    ./modules/mango/default.nix
     # ./modules/fastfetch/fastfetch.nix
     ./modules/gtk/gtk.nix
     ./modules/starship/starship.nix
@@ -102,5 +103,9 @@
     mdcat
     libnotify
     sqlite
+    jdk
+    gnumake
+    beam28Packages.erlang
+    erlang-language-platform
   ];
 }
