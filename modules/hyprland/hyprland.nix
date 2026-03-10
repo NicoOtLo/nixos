@@ -57,7 +57,7 @@
       exec-once = [
         "uwsm app -- waybar"
         "uwsm app -- hyprshade on eink"
-        "uwsm app -- swaybg -m fill -i /etc/nixos/modules/hyprland/wallpapers/death_star.png"
+        "uwsm app -- swaybg -m fill -i /etc/nixos/wallpapers/pikachu.png"
         "uwsm app -- vicinae server"
         "uwsm app -- mako"
         "wl-paste --watch cliphist store"

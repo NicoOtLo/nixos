@@ -1,5 +1,5 @@
-{ ... }
+{ ... }:
 
 {
-xdg.configFile."hypr/shaders/eink.glsl".source = ./eink.glsl;
+  xdg.configFile."hypr/shaders/eink.glsl".source = ./eink.glsl;
 }
