@@ -32,9 +32,6 @@
   hardware.enableAllFirmware = true;
   networking.networkmanager.enable = true;
 
-  programs.firefox.enable = true;
-  programs.wireshark.enable = true;
-
   services.upower.enable = true;
 
   xdg.portal = {

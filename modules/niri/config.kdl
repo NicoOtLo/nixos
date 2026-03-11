@@ -143,17 +143,15 @@ animations {
 }
 
 window-rule {
-    match app-id="firefox"
+    match app-id="zen"
     opacity 0.85
+    default-column-width { proportion 1.0; }
+    open-maximized true
 }
 
-// Open the Firefox picture-in-picture player as floating by default.
 window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    open-floating true
+    match app-id="thunar"
+    opacity 0.85
 }
 
 // Example: block out two password managers from screen capture.
@@ -162,7 +160,7 @@ window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
 
-    block-out-from "screen-capture"
+//    block-out-from "screen-capture"
 
     // Use this instead if you want them visible on third-party screenshot tools.
     // block-out-from "screencast"
@@ -181,7 +179,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Mod+P hotkey-overlay-title="Run an Application: firefox" { spawn "firefox"; }
+    Mod+P hotkey-overlay-title="Run an Application: zen" { spawn "zen"; }
 
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
 
