@@ -154,6 +154,11 @@ window-rule {
     opacity 0.85
 }
 
+window-rule {
+    match app-id="jetbrains-idea-ce"
+    opacity 0.85
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
