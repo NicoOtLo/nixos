@@ -146,7 +146,6 @@ window-rule {
     match app-id="zen"
     opacity 0.85
     default-column-width { proportion 1.0; }
-    open-maximized true
 }
 
 window-rule {
