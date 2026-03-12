@@ -145,17 +145,22 @@ animations {
 window-rule {
     match app-id="zen"
     opacity 0.85
-    default-column-width { proportion 1.0; }
 }
 
 window-rule {
     match app-id="thunar"
+    match app-id="DBeaver"
     opacity 0.85
 }
 
 window-rule {
     match app-id="jetbrains-idea-ce"
     opacity 0.85
+}
+
+layer-rule {
+    match namespace="^wallpapers$"
+    place-within-backdrop true
 }
 
 // Example: block out two password managers from screen capture.

@@ -43,5 +43,5 @@
     };
   };
 
-  xdg.configFile."helix/themes".source = ./themes;
+  xdg.configFile."helix/themes/autumn_night-transparent.toml".source = ./themes/autumn_night-transparent.toml;
 }

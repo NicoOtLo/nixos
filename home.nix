@@ -50,7 +50,6 @@
       c = "clear";
       nixos = "cd /etc/nixos";
       nurse = "sudo nixos-rebuild switch --flake /etc/nixos#numantia";
-      upgrade = "sudo nixos-rebuild switch --upgrade --flake /etc/nixos#numantia";
     };
   };
 
@@ -58,7 +57,7 @@
     eza
     bat
     htop
-    xfce.thunar
+    thunar
     networkmanagerapplet
     pavucontrol
     wlogout
