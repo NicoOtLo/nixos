@@ -44,8 +44,8 @@
     };
 
     shellAliases = {
-      la = "eza -lha";
-      ll = "eza -lh";
+      la = "ls -lha";
+      ll = "ls -lh";
       y = "yazi";
       c = "clear";
       nixos = "cd /etc/nixos";
@@ -54,8 +54,6 @@
   };
 
   home.packages = with pkgs; [
-    eza
-    bat
     htop
     thunar
     networkmanagerapplet
@@ -72,6 +70,7 @@
     ocaml
     clang-tools
     jetbrains.idea-oss
+    zulu21
     ripgrep
     nil
     nixpkgs-fmt
@@ -102,9 +101,9 @@
     mdcat
     libnotify
     sqlite
-    jdk
     gnumake
     beam28Packages.erlang
     erlang-language-platform
+    gimp
   ];
 }

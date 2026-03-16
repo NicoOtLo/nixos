@@ -143,18 +143,13 @@ animations {
 }
 
 window-rule {
-    match app-id="zen"
-    opacity 0.85
-}
-
-window-rule {
     match app-id="thunar"
     match app-id="DBeaver"
-    opacity 0.85
-}
-
-window-rule {
-    match app-id="jetbrains-idea-ce"
+    match app-id="jetbrains-idea"
+    match app-id="org.pwmt.zathura"
+    match app-id="zen"
+    match app-id="thunderbird"
+    
     opacity 0.85
 }
 
