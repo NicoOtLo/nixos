@@ -117,7 +117,7 @@ layout {
     }
 }
 
-spawn-at-startup "swaybg" "-i" "/etc/nixos/wallpapers/grapes.png" "-m" "fill"
+spawn-at-startup "swaybg" "-i" "/etc/nixos/wallpapers/hardisk2.png" "-m" "fill"
 spawn-at-startup "waybar"
 spawn-at-startup "vicinae" "server"
 
@@ -181,6 +181,7 @@ binds {
     Mod+Shift+7 { show-hotkey-overlay; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    Mod+T hotkey-overlay-title="Run an Application: thunar" {spawn "thunar"; }
     Mod+D hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+P hotkey-overlay-title="Run an Application: zen" { spawn "zen"; }
