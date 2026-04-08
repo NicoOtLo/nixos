@@ -70,7 +70,7 @@
     ocaml
     clang-tools
     jetbrains.idea-oss
-    zulu21
+    jdk
     ripgrep
     nil
     nixpkgs-fmt

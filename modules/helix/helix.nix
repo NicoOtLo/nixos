@@ -7,7 +7,7 @@
 
     settings = {
 
-      theme = "autumn_night-transparent";
+      theme = "peachpuff";
 
       editor = {
 

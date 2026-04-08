@@ -18,5 +18,6 @@
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     vicinae
     system-config-printer
+    mpi
   ];
 }

@@ -7,11 +7,12 @@
     settings = {
       # shell tmux;
       confirm_os_window_close = 0;
-      font_familiy = "mononoki";
-      font_size = 12.0;
+      font_family = "Mononoki Nerd Font Mono";
+      font_size = 14.0;
 
       cursor_shape = "block";
       cursor_blink = "on";
+      cursor_trail = 1;
 
       background = "#2E2E2E";
       background_opacity = 0.5;
@@ -40,6 +41,8 @@
       selection_background = "#A3A3A3";
 
       window_padding_width = 12;
+
+      underline_hyperlinks = "always";
 
       enable_audio_bell = "no";
     };

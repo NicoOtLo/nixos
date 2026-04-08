@@ -30,6 +30,7 @@
   programs.zsh.enable = true;
 
   hardware.enableAllFirmware = true;
+
   networking.networkmanager.enable = true;
 
   services.upower.enable = true;
