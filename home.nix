@@ -3,15 +3,10 @@
 {
   imports = [
     ./modules/zathura/zathura.nix
-    ./modules/waybar
     ./modules/niri/niri.nix
     ./modules/kitty/kitty.nix
     ./modules/helix/helix.nix
-    ./modules/hyprland/hyprshade.nix
-    # ./modules/fastfetch/fastfetch.nix
     ./modules/gtk/gtk.nix
-    ./modules/starship/starship.nix
-    ./modules/hyprland/hyprland.nix
   ];
 
   home.username = "nico";

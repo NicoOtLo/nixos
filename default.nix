@@ -35,6 +35,11 @@
 
   services.upower.enable = true;
 
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+  };
+
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [

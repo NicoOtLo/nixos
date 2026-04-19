@@ -8,7 +8,7 @@
       # shell tmux;
       confirm_os_window_close = 0;
       font_family = "Mononoki Nerd Font Mono";
-      font_size = 14.0;
+      font_size = 15.0;
 
       cursor_shape = "block";
       cursor_blink = "on";

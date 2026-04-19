@@ -19,7 +19,7 @@ input {
         // off
         natural-scroll
         accel-speed 0.2
-        scroll-factor 2.0
+        scroll-factor 1.0
         accel-profile "flat"
         scroll-method "no-scroll"
     }
@@ -117,11 +117,7 @@ layout {
     }
 }
 
-spawn-at-startup "swaybg" "-i" "/etc/nixos/wallpapers/hardisk2.png" "-m" "fill"
-spawn-at-startup "waybar"
-spawn-at-startup "vicinae" "server"
-
-// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+spawn-at-startup "noctalia-shell" "--no-duplicate"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -182,7 +178,7 @@ binds {
 
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+T hotkey-overlay-title="Run an Application: thunar" {spawn "thunar"; }
-    Mod+D hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
+    Mod+D hotkey-overlay-title="Run an Application: launcher" { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+P hotkey-overlay-title="Run an Application: zen" { spawn "zen"; }
 

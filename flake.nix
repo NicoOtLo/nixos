@@ -15,6 +15,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -33,6 +38,7 @@
 
         # Other modules
         inputs.noctalia.nixosModules.default
+        inputs.stylix.nixosModules.stylix
 
         home-manager.nixosModules.home-manager
         {
@@ -43,7 +49,6 @@
             backupFileExtension = "backup";
           };
         }
-
       ];
 
       specialArgs = { inherit inputs; };

@@ -4,7 +4,6 @@
   environment.systemPackages = with pkgs; [
     zip
     git
-    libnotify
     vlc
     helix
     tree
@@ -16,8 +15,6 @@
     man-pages
     element-desktop
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-    vicinae
     system-config-printer
-    mpi
   ];
 }
