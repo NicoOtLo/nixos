@@ -34,11 +34,11 @@
       system = "x86_64-linux";
 
       modules = [
+        inputs.stylix.nixosModules.stylix
         ./default.nix
 
         # Other modules
         inputs.noctalia.nixosModules.default
-        inputs.stylix.nixosModules.stylix
 
         home-manager.nixosModules.home-manager
         {

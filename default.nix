@@ -22,8 +22,6 @@
     ./packages/envpkgs.nix
     ./packages/users.nix
 
-    ./modules/stylix/stylix.nix
-
     ./hardware-configuration.nix
   ];
 
