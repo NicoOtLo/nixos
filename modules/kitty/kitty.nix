@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   programs.kitty = {
@@ -15,7 +15,7 @@
       cursor_trail = 1;
 
       background = "#2E2E2E";
-      background_opacity = 0.5;
+      background_opacity = lib.mkForce "0.5";
 
       foreground = "#EDEDED";
 

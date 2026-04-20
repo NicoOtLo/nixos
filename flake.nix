@@ -27,13 +27,14 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs: {
 
     nixosConfigurations.numantia = nixpkgs.lib.nixosSystem {
 
       system = "x86_64-linux";
 
       modules = [
+        stylix.nixosModules.stylix
         ./default.nix
 
         # Other modules

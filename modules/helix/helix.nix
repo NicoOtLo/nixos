@@ -7,7 +7,7 @@
 
     settings = {
 
-      theme = "peachpuff";
+      # theme = "peachpuff";
 
       editor = {
 
@@ -42,6 +42,4 @@
       ];
     };
   };
-
-  xdg.configFile."helix/themes/autumn_night-transparent.toml".source = ./themes/autumn_night-transparent.toml;
 }

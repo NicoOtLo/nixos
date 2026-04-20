@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   imports = [
@@ -6,7 +6,6 @@
     ./modules/niri/niri.nix
     ./modules/kitty/kitty.nix
     ./modules/helix/helix.nix
-    ./modules/gtk/gtk.nix
   ];
 
   home.username = "nico";

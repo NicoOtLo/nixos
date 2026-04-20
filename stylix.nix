@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   stylix = {
@@ -6,14 +6,14 @@
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 
-    # image = ./wallpaper.jpg;
-    # imageScalingMode = "fill";
+    image = ./wallpapers/grapes.png;
+    imageScalingMode = "fill";
 
     polarity = "dark";
 
     fonts = {
       monospace = {
-        package = pkgs.nerd-fonts.monoki;
+        package = pkgs.nerd-fonts.mononoki;
         name = "Mononoki Nerd Font Mono";
       };
       sansSerif = {
@@ -38,10 +38,6 @@
     };
 
     targets = {
-      helix.enable = false;
-      noctalia-shell.enable = false;
-
-      zathura.enable = true;
       gtk.enable = true;
     };
   };
