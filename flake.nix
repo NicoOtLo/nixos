@@ -6,7 +6,7 @@
     nixpkgs.url = "nixpkgs/nixos-25.11";
 
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -15,10 +15,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix = {
-      url = "github:danth/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #    stylix = {
+    #      url = "github:danth/stylix/release-25.11";
+    #      inputs.nixpkgs.follows = "nixpkgs";
+    #    };
 
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";

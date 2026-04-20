@@ -50,7 +50,7 @@
 
   home.packages = with pkgs; [
     htop
-    thunar
+    xfce.thunar
     networkmanagerapplet
     pavucontrol
     wlogout
