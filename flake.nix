@@ -15,11 +15,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix = {
-      url = "github:danth/stylix/release-25.11";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -27,19 +22,16 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, noctalia, ... }@inputs: {
 
     nixosConfigurations.numantia = nixpkgs.lib.nixosSystem {
 
       system = "x86_64-linux";
 
       modules = [
-        stylix.nixosModules.stylix
         ./default.nix
 
         # Other modules
-        ./noctalia.nix
-        ./stylix.nix
 
         home-manager.nixosModules.home-manager
         {

@@ -7,7 +7,7 @@
 
     settings = {
 
-      # theme = "peachpuff";
+      theme = "peachpuff";
 
       editor = {
 
