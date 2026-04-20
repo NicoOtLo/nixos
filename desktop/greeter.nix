@@ -3,15 +3,15 @@
 {
   services.xserver.enable = true;
 
-  services.xserver.displayManager.lightdm.enable = false;
-  services.displayManager.gdm.enable = false;
-  services.displayManager.sddm = {
-    enable = true;
-    extraPackages = with pkgs; [
-      where-is-my-sddm-theme
-    ];
-
-    theme = "where-is-my-sddm-theme";
+  services.displayManager = {
+    sddm = {
+      enable = true;
+      wayland.enable = true;
+    };
+    autoLogin = {
+      enable = true;
+      user = "user"; # Replace with the desired user
+    };
   };
 
   # Your WMs

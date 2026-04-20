@@ -3,7 +3,7 @@
 
   inputs = {
 
-    nixpkgs.url = "nixpkgs/nixos-unstable";
+    nixpkgs.url = "nixpkgs/nixos-25.11";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -38,7 +38,7 @@
         ./default.nix
 
         # Other modules
-        inputs.noctalia.nixosModules.default
+        ./noctalia.nix
 
         home-manager.nixosModules.home-manager
         {
