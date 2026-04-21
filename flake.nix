@@ -20,9 +20,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    minecraft = {
+      url = "github:hero-persson/FjordLauncherUnlocked";
+    };
+
   };
 
-  outputs = { self, nixpkgs, home-manager, noctalia, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, noctalia, minecraft, ... }@inputs: {
 
     nixosConfigurations.numantia = nixpkgs.lib.nixosSystem {
 
