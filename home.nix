@@ -101,4 +101,9 @@
     erlang-language-platform
     gimp
   ];
+
+  theming.gtk = {
+    enable = true;
+    variant = "dark";
+  };
 }
