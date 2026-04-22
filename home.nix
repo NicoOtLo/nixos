@@ -6,12 +6,16 @@
     ./modules/niri/niri.nix
     ./modules/kitty/kitty.nix
     ./modules/helix/helix.nix
-    ./modules/gtk/gtk.nix
   ];
 
   home.username = "nico";
   home.homeDirectory = "/home/nico";
   home.stateVersion = "25.05"; # no tocar
+
+  home.sessionVariables = {
+    GTK_THEME = "Gruvbox-Dark";
+    GTK_ICON_THEME = "Papirus-Dark";
+  };
 
   programs.git = {
     enable = true;
@@ -99,11 +103,8 @@
     gnumake
     beam28Packages.erlang
     erlang-language-platform
+    gruvbox-gtk-theme
+    papirus-icon-theme
     gimp
   ];
-
-  theming.gtk = {
-    enable = true;
-    variant = "dark";
-  };
 }
