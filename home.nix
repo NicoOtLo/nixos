@@ -54,6 +54,7 @@
 
   home.packages = with pkgs; [
     htop
+    drawio
     xfce.thunar
     networkmanagerapplet
     pavucontrol
