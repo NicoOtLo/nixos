@@ -91,7 +91,6 @@
     imagemagick
     quickshell
     alacritty
-    rofi
     thunderbird
     swaybg
     imv
