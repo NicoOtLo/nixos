@@ -106,5 +106,6 @@
     gruvbox-gtk-theme
     papirus-icon-theme
     gimp
+    hyprpicker
   ];
 }
