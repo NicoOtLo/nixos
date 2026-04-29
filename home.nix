@@ -54,6 +54,7 @@
 
   home.packages = with pkgs; [
     htop
+    superTuxKart
     drawio
     xfce.thunar
     networkmanagerapplet
@@ -78,7 +79,6 @@
     dia
     yazi
     fastfetch
-    speedcrunch
     zathura
     xwayland-satellite
     niri
@@ -87,17 +87,14 @@
     ani-cli
     wireshark
     mindustry-wayland
-    nbsdgames
     imagemagick
     quickshell
-    alacritty
     thunderbird
     swaybg
     imv
     microfetch
     dig
     unzip
-    mdcat
     libnotify
     sqlite
     gnumake
