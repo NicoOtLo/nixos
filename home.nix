@@ -47,8 +47,6 @@
       ll = "ls -lh";
       y = "yazi";
       c = "clear";
-      nixos = "cd /etc/nixos";
-      nurse = "sudo nixos-rebuild switch --flake /etc/nixos#numantia";
     };
   };
 
