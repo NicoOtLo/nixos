@@ -53,7 +53,6 @@
   };
 
   home.packages = with pkgs; [
-    htop
     superTuxKart
     drawio
     xfce.thunar
@@ -61,8 +60,6 @@
     pavucontrol
     wlogout
     libreoffice-qt-fresh
-    scid-vs-pc
-    stockfish
     tldr
     steam
     valgrind

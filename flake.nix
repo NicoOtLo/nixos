@@ -23,7 +23,6 @@
     minecraft = {
       url = "github:hero-persson/FjordLauncherUnlocked";
     };
-
   };
 
   outputs = { self, nixpkgs, home-manager, noctalia, minecraft, ... }@inputs: {

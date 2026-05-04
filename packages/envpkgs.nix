@@ -15,5 +15,6 @@
     man-pages
     element-desktop
     system-config-printer
+    nh
   ];
 }
