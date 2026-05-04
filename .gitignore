@@ -2,4 +2,4 @@
 *.swp
 *.bak
 *.lock
-hardware.nix
+hardware-configuration.nix
