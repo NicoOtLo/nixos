@@ -39,7 +39,7 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" ];
+      plugins = [ "git" "colored-man-pages" "eza" "fzf" ];
     };
 
     shellAliases = {
@@ -99,5 +99,7 @@
     papirus-icon-theme
     gimp
     hyprpicker
+    eza
+    fzf
   ];
 }

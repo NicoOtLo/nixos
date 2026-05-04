@@ -1,3 +1,5 @@
 /hardware-configuration.nix~
 *.swp
 *.bak
+*.lock
+hardware.nix
