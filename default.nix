@@ -6,7 +6,6 @@
     ./device/gc.nix
     ./device/virtualisation.nix
     ./device/printer.nix
-    ./device/networking.nix
     ./device/region.nix
     ./device/boot.nix
     ./device/usb.nix

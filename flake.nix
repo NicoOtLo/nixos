@@ -34,7 +34,7 @@
 
   outputs = { self, nixpkgs, home-manager, noctalia, minecraft, zen-browser, ... }@inputs: {
 
-    nixosConfigurations.numantia = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.Numancia = nixpkgs.lib.nixosSystem {
 
       system = "x86_64-linux";
 
