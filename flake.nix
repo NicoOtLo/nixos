@@ -23,6 +23,10 @@
       };
     };
 
+    #    stylix = {
+    #      url = "github:nix-community/stylix";
+    #    };
+    #
     minecraft = {
       url = "github:hero-persson/FjordLauncherUnlocked";
     };
@@ -38,7 +42,7 @@
         ./default.nix
 
         # Other modules
-
+        #        stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         {
           home-manager = {
