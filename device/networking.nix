@@ -1,6 +1,1 @@
-{
-  networking = {
-    hostName = "numantia";
 
-  };
-}
