@@ -181,7 +181,8 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+D hotkey-overlay-title="Run an Application: launcher" { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+P hotkey-overlay-title="Run an Application: zen" { spawn "zen"; }
-    Mod+E hotkey-overlay-title="Run an Application: hyprpicker" { spawn "hyprpicker"; }
+    Mod+S hotkey-overlay-title="Run an Application: hyprpicker" { spawn "hyprpicker"; }
+    Mod+E hotkey-overlay-title="Run an Application: element" { spawn "element-desktop"; }
 
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
 
