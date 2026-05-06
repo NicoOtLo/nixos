@@ -1,4 +1,4 @@
-{ inputs, nixpkgs, pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   users.users.nico.packages = [

@@ -4,6 +4,7 @@
   inputs = {
 
     nixpkgs.url = "nixpkgs/nixos-25.11";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
@@ -17,7 +18,9 @@
 
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+      };
     };
 
     minecraft = {
@@ -25,7 +28,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, noctalia, minecraft, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, noctalia, minecraft, zen-browser, ... }@inputs: {
 
     nixosConfigurations.numantia = nixpkgs.lib.nixosSystem {
 
@@ -43,6 +46,7 @@
             useUserPackages = true;
             users.nico = import ./home.nix;
             backupFileExtension = "backup";
+            extraSpecialArgs = { inherit inputs; };
           };
         }
       ];
