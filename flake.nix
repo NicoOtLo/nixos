@@ -23,16 +23,21 @@
       };
     };
 
+    mangowm = {
+      url = "github:mangowm/mango";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
+
     #    stylix = {
     #      url = "github:nix-community/stylix";
     #    };
-    #
+
     minecraft = {
       url = "github:hero-persson/FjordLauncherUnlocked";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, noctalia, minecraft, zen-browser, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, noctalia, minecraft, zen-browser, mangowm, ... }@inputs: {
 
     nixosConfigurations.Numancia = nixpkgs.lib.nixosSystem {
 
@@ -43,6 +48,7 @@
 
         # Other modules
         #        stylix.nixosModules.stylix
+        mangowm.nixosModules.mango
         home-manager.nixosModules.home-manager
         {
           home-manager = {
