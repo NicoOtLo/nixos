@@ -27,7 +27,7 @@
   networking.hostName = "Numancia";
 
   powerManagement.cpuFreqGovernor = "schedutil";
-  # performance / powesave / schedutil
+  # performance / powersave / schedutil
 
   zramSwap.enable = true; # compresses memory instead of swapping [swap type]
 }
