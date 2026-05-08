@@ -17,6 +17,4 @@
   };
 
   networking.hostName = "Numancia";
-
-  powerManagement.cpuFreqGovernor = "schedutil";
 }

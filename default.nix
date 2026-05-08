@@ -15,6 +15,7 @@
     ./device/manuals.nix
     ./device/fonts.nix
     ./device/suspend.nix
+    ./device/battery.nix
 
     ./desktop/greeter.nix # Sin usar
 

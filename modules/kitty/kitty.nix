@@ -14,8 +14,8 @@
       cursor_blink = "on";
       cursor_trail = 1;
 
-      background = "#2E2E2E";
-      background_opacity = lib.mkForce "0.5";
+      background = "#000000";
+      background_opacity = lib.mkForce "0.3";
 
       foreground = "#EDEDED";
 
