@@ -47,7 +47,7 @@
         ./default.nix
 
         # Other modules
-        #        stylix.nixosModules.stylix
+        # stylix.nixosModules.stylix
         mangowm.nixosModules.mango
         home-manager.nixosModules.home-manager
         {
