@@ -92,6 +92,7 @@
     unzip
     libnotify
     sqlite
+    duf
     gnumake
     beam28Packages.erlang
     erlang-language-platform
