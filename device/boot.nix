@@ -2,8 +2,10 @@
 
 {
   boot = {
-    loader.grub.enable = false;
-    loader.systemd-boot.enable = true;
+    loader.systemd-boot = {
+      enable = true;
+      configurationLimit = 20;
+    };
     loader.efi.canTouchEfiVariables = true;
 
     kernelPackages = pkgs.linuxPackages_zen;

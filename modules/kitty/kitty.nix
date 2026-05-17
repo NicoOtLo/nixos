@@ -15,7 +15,7 @@
       cursor_trail = 1;
 
       background = "#000000";
-      background_opacity = lib.mkForce "0.3";
+      background_opacity = lib.mkForce "0.5";
 
       foreground = "#EDEDED";
 

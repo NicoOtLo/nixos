@@ -2,8 +2,8 @@
   # garbage collector automation
   nix.gc = {
     automatic = true;
-    persistent = false;
+    persistent = true;
     dates = "weekly";
-    options = "--delete-older-than 15d";
+    options = "--delete-older-than 30d";
   };
 }
