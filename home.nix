@@ -53,7 +53,7 @@
   home.packages = with pkgs; [
     superTuxKart
     drawio
-    xfce.thunar
+    thunar
     networkmanagerapplet
     pavucontrol
     wlogout
