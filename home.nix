@@ -51,7 +51,7 @@
   };
 
   home.packages = with pkgs; [
-    superTuxKart
+    supertuxkart
     drawio
     thunar
     networkmanagerapplet
@@ -59,13 +59,11 @@
     wlogout
     libreoffice-qt-fresh
     tldr
-    steam
     valgrind
     dbeaver-bin
     ocamlPackages.utop
     ocaml
     clang-tools
-    jetbrains.idea-oss
     jdk
     ripgrep
     nil

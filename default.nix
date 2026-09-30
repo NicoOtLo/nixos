@@ -16,6 +16,8 @@
     ./device/fonts.nix
     ./device/suspend.nix
     ./device/battery.nix
+    ./packages/steam.nix
+    ./device/graphics.nix
 
     ./desktop/greeter.nix # Sin usar
 
