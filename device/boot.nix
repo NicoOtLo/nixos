@@ -18,5 +18,5 @@
     ];
   };
 
-  networking.hostName = "Numancia";
+  networking.hostName = "Gallaecia";
 }
