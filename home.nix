@@ -100,5 +100,7 @@
     hyprpicker
     eza
     fzf
+    librewolf
+    gephi
   ];
 }

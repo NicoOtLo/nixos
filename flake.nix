@@ -1,5 +1,5 @@
 {
-  description = "NixOS from Scratch";
+  description = "NixOS";
 
   inputs = {
 
@@ -39,7 +39,7 @@
 
   outputs = { self, nixpkgs, home-manager, noctalia, minecraft, zen-browser, mangowm, ... }@inputs: {
 
-    nixosConfigurations.Numancia = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.Gallaecia = nixpkgs.lib.nixosSystem {
 
       system = "x86_64-linux";
 
